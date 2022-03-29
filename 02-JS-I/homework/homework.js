@@ -70,7 +70,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-return str1.lengt == str2.lengt;
+return str1.length === str2.length;
  }
 
 function menosQueNoventa(num) {
@@ -149,14 +149,14 @@ return entero + 1;
  } else {
     return entero;
     }
-    return Math.round;
+    return Math.round(num);
 }
 
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil; 
+  return Math.ceil(num); 
 }
 
 function numeroRandom() {
@@ -171,7 +171,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver (return) ---> "Es positivo"
   //Si el número es negativo, devolver (return) ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero === 1) {
+  if (numero === 0) {
     return false;
   }
   else if (numero > 0) {
@@ -187,7 +187,7 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
   
-  return str + "!";
+  return str + '!';
 }
 
 
@@ -195,8 +195,8 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var doble = "hello" + "" + "world";
-  return doble;
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
 }
 
 
@@ -204,7 +204,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre + "!";
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
